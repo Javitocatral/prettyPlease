@@ -9,7 +9,7 @@ function Nav() {
         Home
       </NavLink>
       <NavLink to="/step" activeClassName="active">
-        Step
+        Steps
       </NavLink>
       <NavLink to="/choreos" activeClassName="active">
         Choreos
