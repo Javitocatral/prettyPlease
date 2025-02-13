@@ -5,22 +5,43 @@ import './nav.css'
 function Nav() {
   return (
     <nav>
-      <NavLink to="/" exact activeClassName="active">
+      <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : '')}>
         Home
       </NavLink>
-      <NavLink to="/step" activeClassName="active">
+      <NavLink
+        to="/step"
+        className={({ isActive }) => (isActive ? 'active' : '')}
+      >
         Steps
       </NavLink>
-      <NavLink to="/choreos" activeClassName="active">
+      <NavLink
+        to="/choreos"
+        className={({ isActive }) => (isActive ? 'active' : '')}
+      >
         Choreos
       </NavLink>
-      <NavLink to="/shop" activeClassName="active">
+      <NavLink
+        to="/shop"
+        className={({ isActive }) => (isActive ? 'active' : '')}
+      >
         Shop
       </NavLink>
-      <NavLink to="/events" activeClassName="active">
+      <NavLink
+        to="/events"
+        className={({ isActive }) => (isActive ? 'active' : '')}
+      >
         Events
       </NavLink>
-      <NavLink to="/about" activeClassName="active">
+      <NavLink
+        to="/maintenance"
+        className={({ isActive }) => (isActive ? 'active' : '')}
+      >
+        Maintenance
+      </NavLink>
+      <NavLink
+        to="/about"
+        className={({ isActive }) => (isActive ? 'active' : '')}
+      >
         About
       </NavLink>
     </nav>
