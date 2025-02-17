@@ -94,7 +94,7 @@ th {
 .main {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
   background-color: #f5f5f5;
 }
 .container-mantenance {
@@ -109,4 +109,17 @@ th {
   gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
+}
+@media (max-width: 768px) {
+  h1 {
+    margin: 20px;
+  }
+  .cards {
+    margin: 5px;
+    height: 100%;
+  }
+
+  .container-mantenance {
+    margin-top: 20px;
+  }
 }
