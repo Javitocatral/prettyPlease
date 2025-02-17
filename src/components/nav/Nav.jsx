@@ -9,6 +9,10 @@ function Nav() {
     setIsOpen(!isOpen)
   }
 
+  const closeMenu = () => {
+    setIsOpen(false)
+  }
+
   return (
     <nav className="navbar">
       <div className="hamburger" onClick={toggleMenu}>
@@ -20,49 +24,49 @@ function Nav() {
         <NavLink
           to="/"
           className={({ isActive }) => (isActive ? 'active' : '')}
-          onClick={toggleMenu}
+          onClick={closeMenu}
         >
           Home
         </NavLink>
         <NavLink
           to="/step"
           className={({ isActive }) => (isActive ? 'active' : '')}
-          onClick={toggleMenu}
+          onClick={closeMenu}
         >
           Steps
         </NavLink>
         <NavLink
           to="/choreos"
           className={({ isActive }) => (isActive ? 'active' : '')}
-          onClick={toggleMenu}
+          onClick={closeMenu}
         >
           Choreos
         </NavLink>
         <NavLink
           to="/shop"
           className={({ isActive }) => (isActive ? 'active' : '')}
-          onClick={toggleMenu}
+          onClick={closeMenu}
         >
           Shop
         </NavLink>
         <NavLink
           to="/events"
           className={({ isActive }) => (isActive ? 'active' : '')}
-          onClick={toggleMenu}
+          onClick={closeMenu}
         >
           Events
         </NavLink>
         <NavLink
           to="/maintenance"
           className={({ isActive }) => (isActive ? 'active' : '')}
-          onClick={toggleMenu}
+          onClick={closeMenu}
         >
           Maintenance
         </NavLink>
         <NavLink
           to="/about"
           className={({ isActive }) => (isActive ? 'active' : '')}
-          onClick={toggleMenu}
+          onClick={closeMenu}
         >
           About
         </NavLink>

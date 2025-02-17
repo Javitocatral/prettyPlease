@@ -59,4 +59,8 @@
     flex-direction: column;
     width: 100%;
   }
+
+  .nav-links.open {
+    display: flex;
+  }
 }
