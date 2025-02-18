@@ -1,0 +1,12 @@
+.music-player {
+  margin-top: 20px;
+}
+
+.music-player button {
+  padding: 10px 20px;
+  border: 1px solid #333;
+  box-shadow: 1px 0px 5px 4px rgba(201, 169, 201, 1);
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+}
