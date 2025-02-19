@@ -1,6 +1,6 @@
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
-import Home from './pages/Home'
+import Home from './pages/home'
 import Step from './pages/Step'
 import Choreos from './pages/Choreos'
 import Shop from './pages/Shop'
@@ -17,7 +17,7 @@ function App() {
         <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/step" element={<Step />} />
+          <Route path="/steps" element={<Step />} />
           <Route path="/choreos" element={<Choreos />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/events" element={<Events />} />
