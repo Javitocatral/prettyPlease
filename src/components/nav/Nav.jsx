@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import './Nav.css'
+import MusicPlayer from '../MusicaPlayer/MusicPlayer'
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false)
