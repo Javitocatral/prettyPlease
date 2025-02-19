@@ -14,7 +14,7 @@ const text1Options = [
 
 const text2Options = ['Maintenance', 'Choreos', 'Steps', 'Events']
 
-const colorOptions = ['#EBB9D2', '#FE9968', '#7FE0EB', '#6CE5B1']
+const colorOptions = ['#27feef', '#ff46a4', '#fcf92c', '#bb64c6']
 
 const imageOptions = [roller1, roller2, roller3, roller4]
 

@@ -113,7 +113,7 @@
   border: none;
   display: block;
   cursor: pointer;
-  background: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 256 256'%3E%3Cpolygon points='225.813,48.907 128,146.72 30.187,48.907 0,79.093 128,207.093 256,79.093' fill='%23333'%3E%3C/polygon%3E%3C/svg%3E");
+  background: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 256 256'%3E%3Cpolygon points='225.813,48.907 128,146.72 30.187,48.907 0,79.093 128,207.093 256,79.093' fill='%23333'%3E%3C/polygon%3E");
   background-size: cover;
   position: absolute;
   transform: translate(310px, 50px);
@@ -125,7 +125,7 @@
   border: none;
   display: block;
   cursor: pointer;
-  background: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 256 256'%3E%3Cpolygon points='225.813,48.907 128,146.72 30.187,48.907 0,79.093 128,207.093 256,79.093' fill='%23333'%3E%3C/polygon%3E%3C/svg%3E");
+  background: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 256 256'%3E%3Cpolygon points='225.813,48.907 128,146.72 30.187,48.907 0,79.093 128,207.093 256,79.093' fill='%23333'%3E%3C/polygon%3E");
   background-size: cover;
   position: absolute;
   transform: translate(310px, -50px) rotate(180deg);
@@ -140,6 +140,7 @@
   z-index: 101;
   position: absolute;
   transform: translate(140px, 0);
+  transition: transform 0.65s ease-in-out, opacity 0.65s ease-in-out;
 }
 
 #carousel-wrapper.anim-next {
@@ -163,7 +164,8 @@
 }
 
 #carousel-wrapper.anim-next #image {
-  animation: next-image 0.65s 0.085s;
+  transform: translate(140px, 0) scale(1.1);
+  opacity: 0;
 }
 
 #carousel-wrapper.anim-previous {
@@ -187,7 +189,8 @@
 }
 
 #carousel-wrapper.anim-previous #image {
-  animation: previous-image 0.65s 0.085s;
+  transform: translate(140px, 0) scale(1.1);
+  opacity: 0;
 }
 
 @keyframes previous-text {
