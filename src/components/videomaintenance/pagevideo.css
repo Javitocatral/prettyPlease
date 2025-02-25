@@ -1,25 +1,83 @@
-.video-mantenance {
+.video-maintenance {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-color: #f5f5f5;
-  padding: 0 20px;
-  margin-top: 30px;
-  gap: 20px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
 }
-h1,
-h2 {
-  color: #333;
+
+.video-container {
+  width: 100%;
+  max-width: 1200px; /* Ajustar el tamaño máximo del video */
+  aspect-ratio: 16 / 9; /* Proporción rectangular */
+  position: relative;
+  overflow: hidden; /* Para asegurar que el contenido recortado no se vea */
 }
-ul {
-  list-style-type: square;
+
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  object-fit: cover; /* Asegura que el video cubra el contenedor recortando los extremos si es necesario */
 }
+
 .description {
-  width: 1000px;
+  width: 100%;
+  max-width: 1000px;
   background: white;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+h1,
+h2 {
+  color: #333;
+}
+
+ul {
+  list-style-type: square;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .description {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .video-container {
+    max-width: 100%;
+    aspect-ratio: 4/3; /* Mantener la proporción rectangular en móviles */
+  }
+
+  .video-container iframe {
+    border-radius: 0; /* Quitar borde redondeado */
+  }
+  .video-maintenance {
+    padding: 5px;
+  }
+  .description {
+    display: none; /* Ocultar descripción en móviles */
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
 }
