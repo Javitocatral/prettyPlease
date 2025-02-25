@@ -1,12 +1,12 @@
 import MusicPlayer from '../components/MusicaPlayer/MusicPlayer'
 import logo from '../assets/logo.png'
 import Carousel from '../components/carrousel/Carousel'
+import CardMovlie from '../components/card-movile/CardMovlie'
 
 function Home() {
   return (
     <div className="container">
-      <img src={logo} alt="Logo pone PrettyPlease" />
-      <Carousel />
+      <CardMovlie />
       <MusicPlayer />
     </div>
   )
