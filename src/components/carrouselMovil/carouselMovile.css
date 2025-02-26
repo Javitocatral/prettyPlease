@@ -14,8 +14,8 @@
 }
 
 .carousel-item {
-  flex: 0 0 50%;
+  flex: 0 0 45%;
   aspect-ratio: 1/1;
-  /* Aseguramos que las tarjetas no se desborden */
+  border-radius: 10px;
   overflow: hidden;
 }
