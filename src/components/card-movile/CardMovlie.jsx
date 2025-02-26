@@ -1,15 +1,15 @@
-import roller1 from '../../assets/roller1.jpg'
 import play from '../../assets/play.png'
 import './CardMovile.css'
-function CardMovlie() {
+
+function CardMovlie({ title, image }) {
   return (
     <div className="container-image">
-      <img src={roller1} alt="" />
+      <img src={image} alt="" />
       <div className="container-play">
         <img style={{ width: '28px' }} src={play} alt="play icon" />
       </div>
       <div className="container-text">
-        <h3>Basic step</h3>
+        <h3>{title}</h3>
       </div>
     </div>
   )

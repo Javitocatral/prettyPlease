@@ -1,0 +1,36 @@
+.carousel {
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+  /* Reduce la separación sin cambiar el tamaño */
+}
+
+button.prev-button,
+button.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev-button {
+  left: 5px;
+}
+
+.next-button {
+  right: 5px;
+}
