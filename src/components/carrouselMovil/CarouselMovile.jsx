@@ -22,9 +22,6 @@ function CarouselMovile({ cards }) {
 
   return (
     <div className="carousel" {...handlers}>
-      <button className="prev-button" onClick={handlePrev}>
-        ‹
-      </button>
       <div
         className="carousel-inner"
         style={{ transform: `translateX(-${currentIndex * 55}%)` }}
@@ -35,9 +32,6 @@ function CarouselMovile({ cards }) {
           </div>
         ))}
       </div>
-      <button className="next-button" onClick={handleNext}>
-        ›
-      </button>
     </div>
   )
 }
