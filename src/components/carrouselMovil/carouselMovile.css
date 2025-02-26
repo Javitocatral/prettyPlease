@@ -2,17 +2,19 @@
   display: flex;
   align-items: center;
   position: relative;
+  width: 100%;
   overflow: hidden;
 }
 
 .carousel-inner {
   display: flex;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.6s ease-in-out;
+  gap: 5px; /* Mantiene la separación de 5px entre imágenes */
 }
 
 .carousel-item {
-  flex: 0 0 100%;
-  /* Reduce la separación sin cambiar el tamaño */
+  flex: 0 0 50%;
+  aspect-ratio: 1/1; /* Mantiene la proporción cuadrada */
 }
 
 button.prev-button,

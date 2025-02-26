@@ -1,5 +1,5 @@
 .container-image {
-  width: 50%;
+  width: 100%;
   position: relative; /* Necesario para posicionar el contenedor de texto */
   display: flex;
   justify-content: center;

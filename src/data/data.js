@@ -20,5 +20,17 @@ const cards = [
     image: roller3,
     link: 'https://example.com/card3',
   },
+  {
+    level: 'Advanced',
+    title: 'Card 4',
+    image: roller3,
+    link: 'https://example.com/card3',
+  },
+  {
+    level: 'Advanced',
+    title: 'Card 5',
+    image: roller3,
+    link: 'https://example.com/card3',
+  },
 ]
 export default cards

@@ -22,16 +22,22 @@ function CarouselMovile({ cards }) {
 
   return (
     <div className="carousel" {...handlers}>
+      <button className="prev-button" onClick={handlePrev}>
+        ‹
+      </button>
       <div
         className="carousel-inner"
-        style={{ transform: `translateX(-${currentIndex * 110}px)` }}
+        style={{ transform: `translateX(-${currentIndex * 55}%)` }}
       >
-        {[...cards, ...cards].map((card, index) => (
+        {cards.map((card, index) => (
           <div key={index} className="carousel-item">
             <CardMovlie {...card} />
           </div>
         ))}
       </div>
+      <button className="next-button" onClick={handleNext}>
+        ›
+      </button>
     </div>
   )
 }
