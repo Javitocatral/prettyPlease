@@ -7,12 +7,7 @@ function Home() {
   return (
     <div className="container">
       <CarouselMovile cards={cards} />
-      <div style={{ width: '100%', margin: '10px' }}>
-        <div></div>
-        <CardEvents />
-        <CardEvents />
-        <CardEvents />
-      </div>
+
       <MusicPlayer />
     </div>
   )
