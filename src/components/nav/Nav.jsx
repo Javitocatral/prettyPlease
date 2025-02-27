@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import './Nav.css'
 import MusicPlayer from '../MusicaPlayer/MusicPlayer'
+import logoS from '../../assets/logoS.png'
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false)
@@ -73,7 +74,7 @@ function Nav() {
           About
         </NavLink>
       </div>
-      <h2 style={{ color: 'white' }}>PrtPl</h2>
+      <img style={{ width: '60px', height: '60px' }} src={logoS} alt="" />
     </nav>
   )
 }
