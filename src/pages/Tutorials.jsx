@@ -1,9 +1,9 @@
-function Step() {
+function Tutorials() {
   return (
     <div>
-      <h1>Steps</h1>
+      <h1>tutolrial</h1>
     </div>
   )
 }
 
-export default Step
+export default Tutorials
