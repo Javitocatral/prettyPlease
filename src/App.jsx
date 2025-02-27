@@ -9,6 +9,7 @@ import About from './pages/About'
 import Maintenance from './pages/Maintenance'
 import Nav from './components/nav/Nav'
 import PageVideo from './components/videomaintenance/PageVideo'
+import ToolBar from './components/tool-bar/ToolBar'
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/maintenance/change-wheels" element={<PageVideo />} />
           <Route path="/about" element={<About />} />
         </Routes>
+        <ToolBar />
       </div>
     </>
   )

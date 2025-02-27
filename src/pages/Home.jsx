@@ -2,6 +2,7 @@ import MusicPlayer from '../components/MusicaPlayer/MusicPlayer'
 import CardEvents from '../components/CardEvents/CardEvents'
 import CarouselMovile from '../components/carrouselMovil/CarouselMovile'
 import cards from '../data/data'
+import CardSkaters from '../components/card-skaters/CardSkaters'
 
 function Home() {
   return (
@@ -23,8 +24,23 @@ function Home() {
         <CardEvents />
         <CardEvents />
       </div>
-
-      <MusicPlayer />
+      <div className="container-box">
+        <div className="container-title">
+          <h4>Rollerskaters</h4>
+        </div>
+        <div className="container-skaters">
+          <CardSkaters />
+          <CardSkaters />
+          <CardSkaters />
+          <CardSkaters />
+          <CardSkaters />
+          <CardSkaters />
+          <CardSkaters />
+          <CardSkaters />
+          <CardSkaters />
+          <CardSkaters />
+        </div>
+      </div>
     </div>
   )
 }

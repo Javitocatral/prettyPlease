@@ -21,6 +21,7 @@ function Nav() {
         <span className="bar"></span>
         <span className="bar"></span>
       </div>
+      <MusicPlayer />
       <div className={`nav-links ${isOpen ? 'open' : ''}`}>
         <NavLink
           to="/"
@@ -72,7 +73,7 @@ function Nav() {
           About
         </NavLink>
       </div>
-      <h2 style={{ color: 'white' }}>PrettyPlease</h2>
+      <h2 style={{ color: 'white' }}>PrtPl</h2>
     </nav>
   )
 }
