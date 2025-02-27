@@ -6,7 +6,23 @@ import cards from '../data/data'
 function Home() {
   return (
     <div className="container">
-      <CarouselMovile cards={cards} />
+      <div className="container-box">
+        <div className="container-title">
+          <h4>Recent tutorials</h4>
+          <p>Show all</p>
+        </div>
+        <CarouselMovile cards={cards} />
+      </div>
+      <div className="container-box">
+        <div className="container-title">
+          <h4>Events</h4>
+          <p>Show all</p>
+        </div>
+        <CardEvents />
+        <CardEvents />
+        <CardEvents />
+        <CardEvents />
+      </div>
 
       <MusicPlayer />
     </div>
