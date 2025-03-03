@@ -1,3 +1,5 @@
+import CardMovlie from '../card-movile/CardMovlie'
+
 const VideoMaintenance = () => {
   return (
     <div className="video-maintenance">
@@ -14,6 +16,7 @@ const VideoMaintenance = () => {
 
       <div className="description">
         <h1>Changing Quad Skate Wheels</h1>
+        <CardMovlie />
       </div>
     </div>
   )
