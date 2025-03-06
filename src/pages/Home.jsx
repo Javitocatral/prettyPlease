@@ -3,6 +3,7 @@ import CardEvents from '../components/CardEvents/CardEvents'
 import CarouselMovile from '../components/carrouselMovil/CarouselMovile'
 import cards from '../data/data'
 import CardSkaters from '../components/card-skaters/CardSkaters'
+import { Link } from 'react-router-dom'
 
 function Home() {
   return (
@@ -10,13 +11,16 @@ function Home() {
       <div className="container-box">
         <div className="container-title">
           <h4>Recent tutorials</h4>
-          <p>Show all</p>
+          <Link to={'/allTuorials'}>
+            <p>Show all</p>
+          </Link>
         </div>
         <CarouselMovile cards={cards} />
       </div>
       <div className="container-box">
         <div className="container-title">
           <h4>Events</h4>
+
           <p>Show all</p>
         </div>
         <CardEvents />

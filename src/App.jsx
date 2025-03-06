@@ -2,7 +2,7 @@ import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import Home from './pages/home'
 import Tutorials from './pages/Tutorials'
-import Choreos from './pages/Choreos'
+import AllTutorials from './pages/AllTutorials'
 import Shop from './pages/Shop'
 import Events from './pages/Events'
 import About from './pages/About'
@@ -19,7 +19,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/tutorials" element={<Tutorials />} />
-          <Route path="/choreos" element={<Choreos />} />
+          <Route path="/allTuorials" element={<AllTutorials />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/events" element={<Events />} />
           <Route path="/maintenance" element={<Maintenance />} />
