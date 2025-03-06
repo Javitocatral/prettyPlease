@@ -9,7 +9,7 @@ function ToolBar() {
       <Link to={'/'}>
         <img src={home} alt="" />
       </Link>
-      <Link to={'/tutorials'}>
+      <Link to={'/Alltutorials'}>
         <img src={play2} alt="" />
       </Link>
       <Link to={'/shop'}>

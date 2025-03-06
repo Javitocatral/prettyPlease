@@ -11,7 +11,7 @@ function Home() {
       <div className="container-box">
         <div className="container-title">
           <h4>Recent tutorials</h4>
-          <Link to={'/allTuorials'}>
+          <Link to={'/Alltutorials'}>
             <p>Show all</p>
           </Link>
         </div>
